@@ -25,12 +25,6 @@ Welcome to the **Task Tracker** project! This application is designed to help us
 - **Email**: `tasktracker@gmail.com`
 - **Password**: `Sharma123`
 
-## 🚀 How to Run Locally
-
-1. **Clone the Repository**  
-   First, clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/your-username/task-tracker.git
 Some Screenshots
 ![image](https://github.com/user-attachments/assets/4bf867f1-24a0-4f04-baec-7d0a95359adf)
 ![image](https://github.com/user-attachments/assets/e97ef824-390d-4000-b0ab-c8554658b4df)
