@@ -1,0 +1,317 @@
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    background-color: #e7c0f7; 
+    border-radius: 10px;
+    position: relative;
+    
+  }
+  
+  
+  .dashboard-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 25px;
+    background-color:#fff; 
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .dashboard-section:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .dashboard-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Task List Section */
+  .task-list {
+    max-height: 400px;
+    overflow-y: auto; 
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  19px ;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    height: auto;
+    transition: background-color 0.2s;
+  }
+  
+  .task-item:hover {
+    background-color: #f0f0f0; /* Light hover effect on task item */
+  }
+  
+  .task-item button {
+    background-color: #ff4757; /* Red color for delete button */
+    color: white;
+    padding:  16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-item button:hover {
+    background-color: #ff6b81; /* Light red hover effect */
+  }
+  
+ 
+  .task-form input,
+  .task-form textarea,
+  .task-form select,
+  .task-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .task-form input:focus,
+  .task-form textarea:focus,
+  .task-form select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  
+  .task-form button {
+    background-color: #87a7f9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-form button:hover {
+    background-color: #2f8df1;
+  }
+  
+  
+  .task-time-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-time-tracker p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .task-time-tracker button {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-time-tracker button:hover {
+    background-color: #0056b3; 
+  }
+  
+
+  .task-chart {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+ 
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    background-color: #e7c0f7; 
+    border-radius: 10px;
+    position: relative; 
+    margin-top: 5px;
+  }
+  
+  
+  .logout-section {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .logout-button {
+    padding: 12px 24px;
+    background-color: #811c96;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #8b0ea4; 
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .dashboard {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .dashboard-section {
+      width: 100%;
+      max-width: none;
+    }
+  }
+ 
+.task-list {
+    max-height: 500px; 
+    overflow-y: auto; 
+    margin-top: 3px; 
+  }
+  
+  .task-item {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 15px;
+    background-color: #ffffff; 
+    border: 1px solid #ddd; 
+    margin-bottom: 15px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease-in-out;
+    height: 250px; 
+  }
+  
+  .task-item:hover {
+    background-color: #f4f7fc; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .task-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .task-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+    flex-grow: 1; 
+  }
+  
+  .task-item .time-spent {
+    font-weight: 600;
+    color: #4caf50; 
+    margin-top: 10px; 
+  }
+  
+  .task-item button {
+    background-color: #ff4757;
+    color: white;
+    padding:  5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.7rem;
+    align-self: flex-start; 
+    margin-top: 10px; 
+  }
+  
+  .task-item button:hover {
+    background-color: #ff6b81; 
+  }
+  
+  
+  .task-time-tracker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .task-time-tracker p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .task-time-tracker button {
+    background-color: #f75151;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.7rem;
+    align-self: flex-start;
+    margin-right: 10px; 
+  }
+  
+  .task-time-tracker button:hover {
+    background-color: #991111;
+  }
+  
+  .task-item .task-buttons {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 2px; 
+    margin-top: auto; 
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .task-item {
+      flex-direction: column; 
+      align-items: flex-start; 
+      height: auto; 
+    }
+  
+    .task-item .time-spent {
+      margin-top: 5px;
+      font-size: 1.1rem; 
+    }
+  
+    .task-item button {
+      width: 100%; 
+    }
+  
+    .task-time-tracker {
+      flex-direction:row ; 
+      align-items: flex-start; 
+    }
+  
+    .task-time-tracker button {
+      
+      margin-top: 5px;
+    }
+  }
+  
